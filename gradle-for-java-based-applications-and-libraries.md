@@ -117,29 +117,29 @@ Set javadoc options:
 
 ## Commands
 
-- gradle wrapper  -> Create Gradle Wrapper
-- gradle clean    -> Clean dist output?
+- `gradle wrapper`  -> Create Gradle Wrapper
+- `gradle clean`    -> Clean dist output?
 
 - with java plugin:
-  - ./gradlew compileJava --console=verbose
-  - ./gradlew processResources --console=verbose
+  - `./gradlew compileJava --console=verbose`
+  - `./gradlew processResources --console=verbose`
 - or both above command agragated command:
-  - ./gradlew classes --console=verbose
+  - `./gradlew classes --console=verbose`
 
 - see dependencies tree (and if it can be found)
-  - ./gradlew dependencies
+  - `./gradlew dependencies`
 
 - generate JAR file
-  - ./gradlew jar   -> dropped JAR in build/libs directory
+  - `./gradlew jar` -> dropped JAR in build/libs directory
 
 - with application plugin:
-  - ./gradlew run --args="add 1 2"    -> specifies arguments
-  - ./gradlew installDist             -> generate shippable application with scripts
-  - ./gradlew distZip distTar         -> bundle distributhe appliation
-  - ./gradlew javadocs                -> genetate java doc in build/docs/javadoc (index.html)
+  - `./gradlew run --args="add 1 2"`  -> specifies arguments
+  - `./gradlew installDist`           -> generate shippable application with scripts
+  - `./gradlew distZip distTar`       -> bundle distributhe appliation
+  - `./gradlew javadocs`              -> genetate java doc in build/docs/javadoc (index.html)
 
 - project or multi-modules project:
-  - ./gradlew project                 -> show project and show projects structure
+  - `./gradlew project`               -> show project and show projects structure
 
 ## Maven Dependencies
 
@@ -155,8 +155,8 @@ Set javadoc options:
     }
 
     dependencies {
-      implementation 'commons-cli:commons-cli:1.4'  -> get from maven repo search results
-      implementation project(':appA')               -> add project dependencies (other modules from this project)
+      implementation 'commons-cli:commons-cli:1.4'  // get from maven repo search results
+      implementation project(':appA')               // add project dependencies (other modules from this project)
     }
 ```
 
@@ -174,18 +174,18 @@ Set javadoc options:
 
   ```groovy
     dependencies {
-      implementation 'commons-cli:commons-cli:1.4'  // not a testImplementation!
+      implementation 'commons-cli:commons-cli:1.4' // not a testImplementation!
       testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'  // test dependency
       testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.7.0'  // test dependency on run time only
     }
   ```
 
 - commands:
-  - ./gradlew compileTestJava // compile tests
-  - ./gradlew test // run the tests (see useJUnitPlatform comment in order to use JUnit 5)
-  - go to build/reports/tests/test the automaticaly gradle generated HTML report (index.html)
-  - go to build/test-reults/test for the autmaticaly gradle generated XML test report
-- adding test task in build.gradle:
+  - `./gradlew compileTestJava` -> compile tests
+  - `./gradlew test`            -> run the tests (see useJUnitPlatform comment in order to use JUnit 5)
+  - go to `build/reports/tests/test` the automaticaly gradle generated HTML report (index.html)
+  - go to `build/test-reults/test` for the autmaticaly gradle generated XML test report
+- adding test task in `build.gradle`:
 
   ```groovy
     test {

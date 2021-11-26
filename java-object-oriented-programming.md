@@ -5,23 +5,23 @@
 ```java
 // Class blueprint
 public class MyClass {
-	// Can have attributes...
-	private String attribute1;  // private attribute member, getter/setter are needed
-	MyEnum myEnum;
-	static string staticAttribute1 = "Static Attribute"; // belongs to the class
-	
-	// Constructor
-	MyClass() {
+  // Can have attributes...
+  private String attribute1;  // private attribute member, getter/setter are needed
+  MyEnum myEnum;
+  static string staticAttribute1 = "Static Attribute"; // belongs to the class
+
+  // Constructor
+  MyClass() {
     // Initiate the instance of MyClass class.
     this("'this' is used to call alternate constructors from within a constructor");
     // optional code lines...
-	}
-	
-	// Constructor
-	MyClass(String message) {
+  }
+
+  // Constructor
+  MyClass(String message) {
     // Initiate the instance of MyClass class.
-	}  
-  
+  }
+
   // Setter for private attribute
   public void setAttribute1(attribute1) {
     this.attribute1 = attribute1;  // note: "this" keyword is needed to disambuguate the variable reference.
@@ -31,25 +31,25 @@ public class MyClass {
   public String getAttribute1() {
     return attribute1;
   }
-  
-	// Methods or behaviours:
-	void myMethod() {  
+
+  // Methods or behaviours:
+  void myMethod() {
     // no modifier so the method is accessible from its package only.
-		this.attribute1 = 'xyz';
-	}
-    
+    this.attribute1 = 'xyz';
+  }
+
   private void myPrivateMethod() {
     // private so only accessible from this classs
   }
-  
+
   protected void myProtectedMethod() {
     // protected method so accessible from this class and sub-classes
   }
-  
+
   public void myPublicMethod() {
     // public method so accessible from anywhere;
   }
-  
+
   // Static method
   static void myStaticMethod() {
     // A static method does not rely on any non-static attribute or member.
@@ -68,10 +68,10 @@ public class MyClass {
 ```java
 // Enum blueprint
 public enum MyEnum {
-	CONSTANT1,
-	CONSTANT2,
-	...,
-	CONSTANTN
+  CONSTANT1,
+  CONSTANT2,
+  ...,
+  CONSTANTN
 }
 ```
 
@@ -80,19 +80,19 @@ public enum MyEnum {
 ```java
 // Main class
 public class Main {
-	public static void main(String[] arg) {
-		MyClass myClass = new MyClass('abc'); // Create an object of type MyClass
-	
-		myClass.myMethod('xyz');  // Call a method from my object
-	}
-	
+  public static void main(String[] arg) {
+    MyClass myClass = new MyClass('abc'); // Create an object of type MyClass
+
+    myClass.myMethod('xyz');  // Call a method from my object
+  }
+
 }
 ```
 
 ## Princibles
 
 ### Encapsulation
-  
+
 - allow us to bind together data and related functionality
 - prevent classes from becoming tightly coupled
 - easily modify the inner workings of one class without affecting the rest of the program
@@ -129,13 +129,13 @@ public class Main {
 public class MySuperClass {
   protected String a1;
   private String a2;
-  
+
   MySuperClass(String a1, String a2) {
     // Super Class constructor
     this.a1 = a1;
     this.a2 = a2;
   }
-  
+
   public void myMethod() {
     // Method of the Super Class
   }
@@ -146,10 +146,10 @@ public class MySubClass extends MySuperClass {
     super(arg1, arg2);  // call superclass with arguments
     // Sub Class constructor
   }
-  
+
   public String getA1() {
     return super.a1;  // this.a1 would also work for this Superclass protected variable;
-  }  
+  }
 
   @Override
   public void myMethod() {

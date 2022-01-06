@@ -1,12 +1,12 @@
-# Ways to promote the quality best practices
+# How to promote the Quality Best Practices
 
-Two ways to promote the quality best practices are: Influencing the teams or to Enforce the best practices.
+Two ways to promote the quality best practices are: *Influencing* the teams or to *enforce* the best practices.
 
-## Influence or evengelize
+## Influence or evangelize
 
 - Discussions: gather information about current pain points (retrospectives and lessons learned)
-- Involve QA Specialists in all SDLC (or [Sofware Development Life Cycle](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm))
-- 1:1 meetings to get information and expose point of views, share ideas and explain the best practices: it may be easier to convice on person than a group
+- Involve QA Specialists in all SDLC (or [Software Development Life Cycle](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm))
+- 1:1 meetings to get information and expose point of views, share ideas and explain the best practices: it may be easier to convince on person than a group
 - Talk to the teams
 - Provide existing articles and blog posts
 - Tech talk to expose the vision
@@ -22,7 +22,7 @@ To show metrics of the current situation (or challenge the "no metrics" or lack 
 
 - End-users or Customers survey can be used (e.g.: use a post-transaction experience survey on the mobile app or web site)
 - White-Label partner surveys
-- Use production dashboards (examples: [Datadog](https://www.datadoghq.com/) or [SignalFX](https://www.splunk.com/en_us/investor-relations/acquisitions/signalfx.html) metrics) and performance tools (e.g.: [WebVitals](https://web.dev/vitals/), etc) to monitor [APIs](https://www.datadoghq.com/blog/monitor-api-performance-with-runscope-and-datadog/), [SQLs](https://www.datadoghq.com/blog/sql-server-performance/), etc.
+- Use production dashboards (examples: [Datadog](https://www.datadoghq.com/) or [SignalFX](https://www.splunk.com/en_us/investor-relations/acquisitions/signalfx.html) metrics) and performance tools (e.g.: [WebVitals](https://web.dev/vitals/), etc.) to monitor [APIs](https://www.datadoghq.com/blog/monitor-api-performance-with-runscope-and-datadog/), [SQLs](https://www.datadoghq.com/blog/sql-server-performance/), etc.
   - Daily performance emails can be sent to the engineering teams
 - NPS and CSAT surveys: [NPS vs CSAT definitions](https://www.questionpro.com/cx/csat/nps-vs-csat.html)
 - Real Customers Journey (traces of the end-users through the applications)
@@ -33,8 +33,8 @@ To show metrics of the current situation (or challenge the "no metrics" or lack 
   - It is also *possible* to get test coverage from a live service using a tool like [Sealights](https://www.sealights.io)
 - Compile the functional testers (manual tests) created Tickets/JIRA vs current team or service test coverage
 - Create Success Stories: start with one team and use the before/after statistics
-- GIT statistics (e.g. with a tool like [GitPrime (now Pluralsight Flow)](https://www.pluralsight.com/product/flow)) in order to correlate bugs/tickets and developers stats (e.g.: number of commits, active days, etc)
-  - I.e.: low stats may be caused by developers not working on features or test automations becayse they are working on manual tests or production support
+- GIT statistics (e.g. with a tool like [GitPrime (now Pluralsight Flow)](https://www.pluralsight.com/product/flow)) in order to correlate bugs/tickets and developers stats (e.g.: number of commits, active days, etc.)
+  - I.e.: low stats may be caused by developers not working on features or test automations because they are working on manual tests or production support
 - Correlate the release cycle (how often the team releases or time to market) and test coverage; better/reliable test coverage and test regression suite will shorten the release cycle.
 - Gather statistic about how much time it takes to refactor an existing feature?  Better test coverage will result in faster refactoring
 
@@ -42,6 +42,6 @@ To show metrics of the current situation (or challenge the "no metrics" or lack 
 
 - Contact the best practices stakeholders and to ask for support (example: to push the best practices downward)
 - To fix deadlines (must be adopted by specific dates)
-- Enfore with Gates, checklists, DoD, etc.
+- Enforce with Gates, checklists, DoD, etc.
 - Set Quality specific OKRs
 - Assign Quality trainings

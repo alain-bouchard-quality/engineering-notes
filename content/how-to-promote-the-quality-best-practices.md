@@ -40,7 +40,7 @@ To show metrics of the current situation (or challenge the "no metrics" or lack 
 
 ## Enforce
 
-- Contact the best practices stakeholders and to ask for support (example: to push the best practices downward)
+- Contact the best practices stakeholders and ask for support (I.e.: to push the best practices downward)
 - To fix deadlines (must be adopted by specific dates)
 - Enforce with Gates, checklists, DoD, etc.
 - Set Quality specific OKRs
